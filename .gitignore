@@ -1,0 +1,4 @@
+# CNC OptiCut modular project
+Output/
+*.bak
+*.tmp

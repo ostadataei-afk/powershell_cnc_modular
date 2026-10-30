@@ -1,0 +1,5 @@
+PASS All 35 original functions preserved (only invariant culture and local constants substituted).
+PASS Entire original application workflow preserved after added path preflight.
+PASS Full original/modular workflows: ValidateOnly preserves old output; normal run clears old subfolders; 10 output files byte-identical; inputs unchanged.
+PASS Three invalid input batches rejected equally; existing outputs preserved.
+Review output retained at C:\Users\AliReza\Desktop\CNC-Stage3-v4.1-Fixed-Tests\tmp\preservation-e2943d62b27343a8936772b5b03651bf

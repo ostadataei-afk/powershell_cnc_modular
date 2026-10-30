@@ -1,0 +1,501 @@
+Parser tests: 55 passed, 0 failed. (Source syntax check passed.)
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS Normal paired SH+Z
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS One part inside sheet
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS Two parts touch at edge
+PASS Part outside presumed sheet
+PASS Part interiors overlap
+PASS First rectangle not a sheet
+PASS SH crosses material removed by Z
+PASS SH touches Z cutout boundary
+PASS Micro Z rounds to zero
+PASS Micro SH rounds onto border
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state NN role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state NN role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state N/Y role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state N/Y role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state Y/N role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state Y/N role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state Y/Y role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 1 state Y/Y role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state NN role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state NN role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state N/Y role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state N/Y role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state Y/N role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state Y/N role L
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state Y/Y role R
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (geometry-test.dxf).
+PASS table 2 state Y/Y role L
+
+Geometry tests: 26 passed, 0 failed.
+Stage 3 fixture preflight: 10 TestFixtures and 10 Sample_A_Valid DXF files found.
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-One-Part.dxf).
+PASS Legacy one-part source, dimension + left-edge SH
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Pair '01_300SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 32] -> L Legacy-Fifteen-Parts.dxf [TEXT 38] | NN
+  Pair '02_300SH100_Z': R Legacy-Fifteen-Parts.dxf [TEXT 42] -> L Legacy-Fifteen-Parts.dxf [TEXT 44] | NN
+  Pair '02_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 18] -> L Legacy-Fifteen-Parts.dxf [TEXT 36] | NN
+  Pair '03_320SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 22] -> L Legacy-Fifteen-Parts.dxf [TEXT 24] | Y/Y
+  Pair '03_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 28] -> L Legacy-Fifteen-Parts.dxf [TEXT 46] | NN
+  Pair '04_290SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 20] -> L Legacy-Fifteen-Parts.dxf [TEXT 26] | NN
+  Pair '04_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 30] -> L Legacy-Fifteen-Parts.dxf [TEXT 40] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-Fifteen-Parts.dxf).
+PASS Legacy real 15-part file; left-edge dimension matches and pairs
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Original.dxf).
+PASS Layered real OptiCut DXF, 22 Parts, 11 Off-Cuts, 12 non-CNC labels
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Pair 'SH_Z': R Layered-Pair.dxf [TEXT 5] -> L Layered-Pair.dxf [TEXT 11] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Pair.dxf).
+PASS Layered, two centered SH+Z labels on different-size Parts
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Standalone.dxf).
+PASS Layered standalone decimal SH on a 60mm wide part
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Pair 'MIX_SH_Z': R Mix-R-Legacy.dxf [TEXT 4] -> L Mix-L-Layered.dxf [TEXT 5] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-L-Layered.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-R-Legacy.dxf).
+PASS Global pair across Legacy-R and Layered-L files
+PASS Reject Panel missing despite Parts being present
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+PASS Reject feature label significantly away from part center
+PASS Reject two Panel rectangles
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x3550 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  Pair 'CASE01_300SH_Z': R 01-R.dxf [TEXT 11] -> L 02-L.dxf [TEXT 11] | NN
+  Pair 'CASE02_300SH_Z': R 01-R.dxf [TEXT 13] -> L 02-L.dxf [TEXT 13] | N/Y
+  Pair 'CASE03_300SH_Z': R 01-R.dxf [TEXT 15] -> L 02-L.dxf [TEXT 15] | Y/N
+  Pair 'CASE04_300SH_Z': R 01-R.dxf [TEXT 17] -> L 02-L.dxf [TEXT 17] | Y/Y
+  Pair 'CASE05_SH_Z': R 01-R.dxf [TEXT 19] -> L 02-L.dxf [TEXT 19] | NN
+  Pair 'CASE06_SH_Z': R 01-R.dxf [TEXT 21] -> L 02-L.dxf [TEXT 21] | N/Y
+  Pair 'CASE07_SH_Z': R 01-R.dxf [TEXT 23] -> L 02-L.dxf [TEXT 23] | Y/N
+  Pair 'CASE08_SH_Z': R 01-R.dxf [TEXT 25] -> L 02-L.dxf [TEXT 25] | Y/Y
+  Pair 'CUSTOM1_300SH_80Z40': R 06-Right.dxf [TEXT 9] -> L 07-Left.dxf [TEXT 9] | N/Y
+  Pair 'CUSTOM2_SH_80Z': R 06-Right.dxf [TEXT 11] -> L 07-Left.dxf [TEXT 11] | Y/N
+  Pair 'CUSTOM3_300SH_Z40': R 06-Right.dxf [TEXT 13] -> L 07-Left.dxf [TEXT 13] | NN
+  Pair 'CUSTOM4_800SH20_90Z35': R 06-Right.dxf [TEXT 15] -> L 07-Left.dxf [TEXT 15] | Y/Y
+  Pair 'CUSTOM5_SH25_Z': R 06-Right.dxf [TEXT 17] -> L 07-Left.dxf [TEXT 17] | NN
+  Pair 'CUSTOM6_300SH30_Z': R 06-Right.dxf [TEXT 19] -> L 07-Left.dxf [TEXT 19] | Y/Y
+  Pair 'FALLBACK01_300SH_Z': R 04-Alpha.dxf [TEXT 7] -> L 05-Beta.dxf [TEXT 7] | N/Y
+  Pair 'FALLBACK02_SH_Z': R 04-Alpha.dxf [TEXT 9] -> L 05-Beta.dxf [TEXT 9] | Y/N
+  Pair 'FALLBACK03_300SH_Z': R 04-Alpha.dxf [TEXT 11] -> L 05-Beta.dxf [TEXT 11] | Y/Y
+  Pair 'FALLBACK04_SH_Z': R 04-Alpha.dxf [TEXT 13] -> L 05-Beta.dxf [TEXT 13] | NN
+  Pair 'INFILE01_300SH_Z': R 03-InFile.dxf [TEXT 11] -> L 03-InFile.dxf [TEXT 13] | NN
+  Pair 'INFILE02_800SH_Z': R 03-InFile.dxf [TEXT 15] -> L 03-InFile.dxf [TEXT 17] | N/Y
+  Pair 'INFILE03_300SH_Z': R 03-InFile.dxf [TEXT 19] -> L 03-InFile.dxf [TEXT 21] | Y/N
+  Pair 'INFILE04_800SH_Z': R 03-InFile.dxf [TEXT 23] -> L 03-InFile.dxf [TEXT 25] | Y/Y
+  Pair 'MX001_SH_Z': R 09-R-Matrix.dxf [TEXT 84] -> L 10-L-Matrix.dxf [TEXT 84] | NN
+  Pair 'MX002-SH-Z40': R 09-R-Matrix.dxf [TEXT 86] -> L 10-L-Matrix.dxf [TEXT 86] | N/Y
+  Pair 'MX003_SH_Z35': R 09-R-Matrix.dxf [TEXT 88] -> L 10-L-Matrix.dxf [TEXT 88] | Y/N
+  Pair 'MX004-SH-80Z': R 09-R-Matrix.dxf [TEXT 90] -> L 10-L-Matrix.dxf [TEXT 90] | Y/Y
+  Pair 'MX005_SH_80Z40': R 09-R-Matrix.dxf [TEXT 92] -> L 10-L-Matrix.dxf [TEXT 92] | NN
+  Pair 'MX006-SH-80Z35': R 09-R-Matrix.dxf [TEXT 94] -> L 10-L-Matrix.dxf [TEXT 94] | N/Y
+  Pair 'MX007_SH_90Z': R 09-R-Matrix.dxf [TEXT 96] -> L 10-L-Matrix.dxf [TEXT 96] | Y/N
+  Pair 'MX008-SH-90Z40': R 09-R-Matrix.dxf [TEXT 98] -> L 10-L-Matrix.dxf [TEXT 98] | Y/Y
+  Pair 'MX009_SH_90Z35': R 09-R-Matrix.dxf [TEXT 100] -> L 10-L-Matrix.dxf [TEXT 100] | NN
+  Pair 'MX010-SH18-Z': R 09-R-Matrix.dxf [TEXT 102] -> L 10-L-Matrix.dxf [TEXT 102] | N/Y
+  Pair 'MX011_SH18_Z40': R 09-R-Matrix.dxf [TEXT 104] -> L 10-L-Matrix.dxf [TEXT 104] | Y/N
+  Pair 'MX012-SH18-Z35': R 09-R-Matrix.dxf [TEXT 106] -> L 10-L-Matrix.dxf [TEXT 106] | Y/Y
+  Pair 'MX013_SH18_80Z': R 09-R-Matrix.dxf [TEXT 108] -> L 10-L-Matrix.dxf [TEXT 108] | NN
+  Pair 'MX014-SH18-80Z40': R 09-R-Matrix.dxf [TEXT 110] -> L 10-L-Matrix.dxf [TEXT 110] | N/Y
+  Pair 'MX015_SH18_80Z35': R 09-R-Matrix.dxf [TEXT 112] -> L 10-L-Matrix.dxf [TEXT 112] | Y/N
+  Pair 'MX016-SH18-90Z': R 09-R-Matrix.dxf [TEXT 114] -> L 10-L-Matrix.dxf [TEXT 114] | Y/Y
+  Pair 'MX017_SH18_90Z40': R 09-R-Matrix.dxf [TEXT 116] -> L 10-L-Matrix.dxf [TEXT 116] | NN
+  Pair 'MX018-SH18-90Z35': R 09-R-Matrix.dxf [TEXT 118] -> L 10-L-Matrix.dxf [TEXT 118] | N/Y
+  Pair 'MX019_SH25_Z': R 09-R-Matrix.dxf [TEXT 120] -> L 10-L-Matrix.dxf [TEXT 120] | Y/N
+  Pair 'MX020-SH25-Z40': R 09-R-Matrix.dxf [TEXT 122] -> L 10-L-Matrix.dxf [TEXT 122] | Y/Y
+  Pair 'MX021_SH25_Z35': R 09-R-Matrix.dxf [TEXT 124] -> L 10-L-Matrix.dxf [TEXT 124] | NN
+  Pair 'MX022-SH25-80Z': R 09-R-Matrix.dxf [TEXT 126] -> L 10-L-Matrix.dxf [TEXT 126] | N/Y
+  Pair 'MX023_SH25_80Z40': R 09-R-Matrix.dxf [TEXT 128] -> L 10-L-Matrix.dxf [TEXT 128] | Y/N
+  Pair 'MX024-SH25-80Z35': R 09-R-Matrix.dxf [TEXT 130] -> L 10-L-Matrix.dxf [TEXT 130] | Y/Y
+  Pair 'MX025_SH25_90Z': R 09-R-Matrix.dxf [TEXT 132] -> L 10-L-Matrix.dxf [TEXT 132] | NN
+  Pair 'MX026-SH25-90Z40': R 09-R-Matrix.dxf [TEXT 134] -> L 10-L-Matrix.dxf [TEXT 134] | N/Y
+  Pair 'MX027_SH25_90Z35': R 09-R-Matrix.dxf [TEXT 136] -> L 10-L-Matrix.dxf [TEXT 136] | Y/N
+  Pair 'MX028-300SH-Z': R 09-R-Matrix.dxf [TEXT 138] -> L 10-L-Matrix.dxf [TEXT 138] | Y/Y
+  Pair 'MX029_300SH_Z40': R 09-R-Matrix.dxf [TEXT 140] -> L 10-L-Matrix.dxf [TEXT 140] | NN
+  Pair 'MX030-300SH-Z35': R 09-R-Matrix.dxf [TEXT 142] -> L 10-L-Matrix.dxf [TEXT 142] | N/Y
+  Pair 'MX031_300SH_80Z': R 09-R-Matrix.dxf [TEXT 144] -> L 10-L-Matrix.dxf [TEXT 144] | Y/N
+  Pair 'MX032-300SH-80Z40': R 09-R-Matrix.dxf [TEXT 146] -> L 10-L-Matrix.dxf [TEXT 146] | Y/Y
+  Pair 'MX033_300SH_80Z35': R 09-R-Matrix.dxf [TEXT 148] -> L 10-L-Matrix.dxf [TEXT 148] | NN
+  Pair 'MX034-300SH-90Z': R 09-R-Matrix.dxf [TEXT 150] -> L 10-L-Matrix.dxf [TEXT 150] | N/Y
+  Pair 'MX035_300SH_90Z40': R 09-R-Matrix.dxf [TEXT 152] -> L 10-L-Matrix.dxf [TEXT 152] | Y/N
+  Pair 'MX036-300SH-90Z35': R 09-R-Matrix.dxf [TEXT 154] -> L 10-L-Matrix.dxf [TEXT 154] | Y/Y
+  Pair 'MX037_300SH18_Z': R 09-R-Matrix.dxf [TEXT 156] -> L 10-L-Matrix.dxf [TEXT 156] | NN
+  Pair 'MX038-300SH18-Z40': R 09-R-Matrix.dxf [TEXT 158] -> L 10-L-Matrix.dxf [TEXT 158] | N/Y
+  Pair 'MX039_300SH18_Z35': R 09-R-Matrix.dxf [TEXT 160] -> L 10-L-Matrix.dxf [TEXT 160] | Y/N
+  Pair 'MX040-300SH18-80Z': R 09-R-Matrix.dxf [TEXT 162] -> L 10-L-Matrix.dxf [TEXT 162] | Y/Y
+  Pair 'MX041_300SH18_80Z40': R 09-R-Matrix.dxf [TEXT 164] -> L 10-L-Matrix.dxf [TEXT 164] | NN
+  Pair 'MX042-300SH18-80Z35': R 09-R-Matrix.dxf [TEXT 166] -> L 10-L-Matrix.dxf [TEXT 166] | N/Y
+  Pair 'MX043_300SH18_90Z': R 09-R-Matrix.dxf [TEXT 168] -> L 10-L-Matrix.dxf [TEXT 168] | Y/N
+  Pair 'MX044-300SH18-90Z40': R 09-R-Matrix.dxf [TEXT 170] -> L 10-L-Matrix.dxf [TEXT 170] | Y/Y
+  Pair 'MX045_300SH18_90Z35': R 09-R-Matrix.dxf [TEXT 172] -> L 10-L-Matrix.dxf [TEXT 172] | NN
+  Pair 'MX046-300SH25-Z': R 09-R-Matrix.dxf [TEXT 174] -> L 10-L-Matrix.dxf [TEXT 174] | N/Y
+  Pair 'MX047_300SH25_Z40': R 09-R-Matrix.dxf [TEXT 176] -> L 10-L-Matrix.dxf [TEXT 176] | Y/N
+  Pair 'MX048-300SH25-Z35': R 09-R-Matrix.dxf [TEXT 178] -> L 10-L-Matrix.dxf [TEXT 178] | Y/Y
+  Pair 'MX049_300SH25_80Z': R 09-R-Matrix.dxf [TEXT 180] -> L 10-L-Matrix.dxf [TEXT 180] | NN
+  Pair 'MX050-300SH25-80Z40': R 09-R-Matrix.dxf [TEXT 182] -> L 10-L-Matrix.dxf [TEXT 182] | N/Y
+  Pair 'MX051_300SH25_80Z35': R 09-R-Matrix.dxf [TEXT 184] -> L 10-L-Matrix.dxf [TEXT 184] | Y/N
+  Pair 'MX052-300SH25-90Z': R 09-R-Matrix.dxf [TEXT 186] -> L 10-L-Matrix.dxf [TEXT 186] | Y/Y
+  Pair 'MX053_300SH25_90Z40': R 09-R-Matrix.dxf [TEXT 188] -> L 10-L-Matrix.dxf [TEXT 188] | NN
+  Pair 'MX054-300SH25-90Z35': R 09-R-Matrix.dxf [TEXT 190] -> L 10-L-Matrix.dxf [TEXT 190] | N/Y
+  Pair 'MX055_800SH_Z': R 09-R-Matrix.dxf [TEXT 192] -> L 10-L-Matrix.dxf [TEXT 192] | Y/N
+  Pair 'MX056-800SH-Z40': R 09-R-Matrix.dxf [TEXT 194] -> L 10-L-Matrix.dxf [TEXT 194] | Y/Y
+  Pair 'MX057_800SH_Z35': R 09-R-Matrix.dxf [TEXT 196] -> L 10-L-Matrix.dxf [TEXT 196] | NN
+  Pair 'MX058-800SH-80Z': R 09-R-Matrix.dxf [TEXT 198] -> L 10-L-Matrix.dxf [TEXT 198] | N/Y
+  Pair 'MX059_800SH_80Z40': R 09-R-Matrix.dxf [TEXT 200] -> L 10-L-Matrix.dxf [TEXT 200] | Y/N
+  Pair 'MX060-800SH-80Z35': R 09-R-Matrix.dxf [TEXT 202] -> L 10-L-Matrix.dxf [TEXT 202] | Y/Y
+  Pair 'MX061_800SH_90Z': R 09-R-Matrix.dxf [TEXT 204] -> L 10-L-Matrix.dxf [TEXT 204] | NN
+  Pair 'MX062-800SH-90Z40': R 09-R-Matrix.dxf [TEXT 206] -> L 10-L-Matrix.dxf [TEXT 206] | N/Y
+  Pair 'MX063_800SH_90Z35': R 09-R-Matrix.dxf [TEXT 208] -> L 10-L-Matrix.dxf [TEXT 208] | Y/N
+  Pair 'MX064-800SH18-Z': R 09-R-Matrix.dxf [TEXT 210] -> L 10-L-Matrix.dxf [TEXT 210] | Y/Y
+  Pair 'MX065_800SH18_Z40': R 09-R-Matrix.dxf [TEXT 212] -> L 10-L-Matrix.dxf [TEXT 212] | NN
+  Pair 'MX066-800SH18-Z35': R 09-R-Matrix.dxf [TEXT 214] -> L 10-L-Matrix.dxf [TEXT 214] | N/Y
+  Pair 'MX067_800SH18_80Z': R 09-R-Matrix.dxf [TEXT 216] -> L 10-L-Matrix.dxf [TEXT 216] | Y/N
+  Pair 'MX068-800SH18-80Z40': R 09-R-Matrix.dxf [TEXT 218] -> L 10-L-Matrix.dxf [TEXT 218] | Y/Y
+  Pair 'MX069_800SH18_80Z35': R 09-R-Matrix.dxf [TEXT 220] -> L 10-L-Matrix.dxf [TEXT 220] | NN
+  Pair 'MX070-800SH18-90Z': R 09-R-Matrix.dxf [TEXT 222] -> L 10-L-Matrix.dxf [TEXT 222] | N/Y
+  Pair 'MX071_800SH18_90Z40': R 09-R-Matrix.dxf [TEXT 224] -> L 10-L-Matrix.dxf [TEXT 224] | Y/N
+  Pair 'MX072-800SH18-90Z35': R 09-R-Matrix.dxf [TEXT 226] -> L 10-L-Matrix.dxf [TEXT 226] | Y/Y
+  Pair 'MX073_800SH25_Z': R 09-R-Matrix.dxf [TEXT 228] -> L 10-L-Matrix.dxf [TEXT 228] | NN
+  Pair 'MX074-800SH25-Z40': R 09-R-Matrix.dxf [TEXT 230] -> L 10-L-Matrix.dxf [TEXT 230] | N/Y
+  Pair 'MX075_800SH25_Z35': R 09-R-Matrix.dxf [TEXT 232] -> L 10-L-Matrix.dxf [TEXT 232] | Y/N
+  Pair 'MX076-800SH25-80Z': R 09-R-Matrix.dxf [TEXT 234] -> L 10-L-Matrix.dxf [TEXT 234] | Y/Y
+  Pair 'MX077_800SH25_80Z40': R 09-R-Matrix.dxf [TEXT 236] -> L 10-L-Matrix.dxf [TEXT 236] | NN
+  Pair 'MX078-800SH25-80Z35': R 09-R-Matrix.dxf [TEXT 238] -> L 10-L-Matrix.dxf [TEXT 238] | N/Y
+  Pair 'MX079_800SH25_90Z': R 09-R-Matrix.dxf [TEXT 240] -> L 10-L-Matrix.dxf [TEXT 240] | Y/N
+  Pair 'MX080-800SH25-90Z40': R 09-R-Matrix.dxf [TEXT 242] -> L 10-L-Matrix.dxf [TEXT 242] | Y/Y
+  Pair 'MX081_800SH25_90Z35': R 09-R-Matrix.dxf [TEXT 244] -> L 10-L-Matrix.dxf [TEXT 244] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (01-R.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (02-L.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (03-InFile.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (04-Alpha.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (05-Beta.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (06-Right.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (07-Left.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (08-Standalone.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (09-R-Matrix.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (10-L-Matrix.dxf).
+PASS All 10 baseline CNC files from stage 2 in a single validated batch
+
+Stage 3 integration tests: 10 passed, 0 failed.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x3550 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  Pair 'CASE01_300SH_Z': R 01-R.dxf [TEXT 11] -> L 02-L.dxf [TEXT 11] | NN
+  Pair 'CASE02_300SH_Z': R 01-R.dxf [TEXT 13] -> L 02-L.dxf [TEXT 13] | N/Y
+  Pair 'CASE03_300SH_Z': R 01-R.dxf [TEXT 15] -> L 02-L.dxf [TEXT 15] | Y/N
+  Pair 'CASE04_300SH_Z': R 01-R.dxf [TEXT 17] -> L 02-L.dxf [TEXT 17] | Y/Y
+  Pair 'CASE05_SH_Z': R 01-R.dxf [TEXT 19] -> L 02-L.dxf [TEXT 19] | NN
+  Pair 'CASE06_SH_Z': R 01-R.dxf [TEXT 21] -> L 02-L.dxf [TEXT 21] | N/Y
+  Pair 'CASE07_SH_Z': R 01-R.dxf [TEXT 23] -> L 02-L.dxf [TEXT 23] | Y/N
+  Pair 'CASE08_SH_Z': R 01-R.dxf [TEXT 25] -> L 02-L.dxf [TEXT 25] | Y/Y
+  Pair 'CUSTOM1_300SH_80Z40': R 06-Right.dxf [TEXT 9] -> L 07-Left.dxf [TEXT 9] | N/Y
+  Pair 'CUSTOM2_SH_80Z': R 06-Right.dxf [TEXT 11] -> L 07-Left.dxf [TEXT 11] | Y/N
+  Pair 'CUSTOM3_300SH_Z40': R 06-Right.dxf [TEXT 13] -> L 07-Left.dxf [TEXT 13] | NN
+  Pair 'CUSTOM4_800SH20_90Z35': R 06-Right.dxf [TEXT 15] -> L 07-Left.dxf [TEXT 15] | Y/Y
+  Pair 'CUSTOM5_SH25_Z': R 06-Right.dxf [TEXT 17] -> L 07-Left.dxf [TEXT 17] | NN
+  Pair 'CUSTOM6_300SH30_Z': R 06-Right.dxf [TEXT 19] -> L 07-Left.dxf [TEXT 19] | Y/Y
+  Pair 'FALLBACK01_300SH_Z': R 04-Alpha.dxf [TEXT 7] -> L 05-Beta.dxf [TEXT 7] | N/Y
+  Pair 'FALLBACK02_SH_Z': R 04-Alpha.dxf [TEXT 9] -> L 05-Beta.dxf [TEXT 9] | Y/N
+  Pair 'FALLBACK03_300SH_Z': R 04-Alpha.dxf [TEXT 11] -> L 05-Beta.dxf [TEXT 11] | Y/Y
+  Pair 'FALLBACK04_SH_Z': R 04-Alpha.dxf [TEXT 13] -> L 05-Beta.dxf [TEXT 13] | NN
+  Pair 'INFILE01_300SH_Z': R 03-InFile.dxf [TEXT 11] -> L 03-InFile.dxf [TEXT 13] | NN
+  Pair 'INFILE02_800SH_Z': R 03-InFile.dxf [TEXT 15] -> L 03-InFile.dxf [TEXT 17] | N/Y
+  Pair 'INFILE03_300SH_Z': R 03-InFile.dxf [TEXT 19] -> L 03-InFile.dxf [TEXT 21] | Y/N
+  Pair 'INFILE04_800SH_Z': R 03-InFile.dxf [TEXT 23] -> L 03-InFile.dxf [TEXT 25] | Y/Y
+  Pair 'MX001_SH_Z': R 09-R-Matrix.dxf [TEXT 84] -> L 10-L-Matrix.dxf [TEXT 84] | NN
+  Pair 'MX002-SH-Z40': R 09-R-Matrix.dxf [TEXT 86] -> L 10-L-Matrix.dxf [TEXT 86] | N/Y
+  Pair 'MX003_SH_Z35': R 09-R-Matrix.dxf [TEXT 88] -> L 10-L-Matrix.dxf [TEXT 88] | Y/N
+  Pair 'MX004-SH-80Z': R 09-R-Matrix.dxf [TEXT 90] -> L 10-L-Matrix.dxf [TEXT 90] | Y/Y
+  Pair 'MX005_SH_80Z40': R 09-R-Matrix.dxf [TEXT 92] -> L 10-L-Matrix.dxf [TEXT 92] | NN
+  Pair 'MX006-SH-80Z35': R 09-R-Matrix.dxf [TEXT 94] -> L 10-L-Matrix.dxf [TEXT 94] | N/Y
+  Pair 'MX007_SH_90Z': R 09-R-Matrix.dxf [TEXT 96] -> L 10-L-Matrix.dxf [TEXT 96] | Y/N
+  Pair 'MX008-SH-90Z40': R 09-R-Matrix.dxf [TEXT 98] -> L 10-L-Matrix.dxf [TEXT 98] | Y/Y
+  Pair 'MX009_SH_90Z35': R 09-R-Matrix.dxf [TEXT 100] -> L 10-L-Matrix.dxf [TEXT 100] | NN
+  Pair 'MX010-SH18-Z': R 09-R-Matrix.dxf [TEXT 102] -> L 10-L-Matrix.dxf [TEXT 102] | N/Y
+  Pair 'MX011_SH18_Z40': R 09-R-Matrix.dxf [TEXT 104] -> L 10-L-Matrix.dxf [TEXT 104] | Y/N
+  Pair 'MX012-SH18-Z35': R 09-R-Matrix.dxf [TEXT 106] -> L 10-L-Matrix.dxf [TEXT 106] | Y/Y
+  Pair 'MX013_SH18_80Z': R 09-R-Matrix.dxf [TEXT 108] -> L 10-L-Matrix.dxf [TEXT 108] | NN
+  Pair 'MX014-SH18-80Z40': R 09-R-Matrix.dxf [TEXT 110] -> L 10-L-Matrix.dxf [TEXT 110] | N/Y
+  Pair 'MX015_SH18_80Z35': R 09-R-Matrix.dxf [TEXT 112] -> L 10-L-Matrix.dxf [TEXT 112] | Y/N
+  Pair 'MX016-SH18-90Z': R 09-R-Matrix.dxf [TEXT 114] -> L 10-L-Matrix.dxf [TEXT 114] | Y/Y
+  Pair 'MX017_SH18_90Z40': R 09-R-Matrix.dxf [TEXT 116] -> L 10-L-Matrix.dxf [TEXT 116] | NN
+  Pair 'MX018-SH18-90Z35': R 09-R-Matrix.dxf [TEXT 118] -> L 10-L-Matrix.dxf [TEXT 118] | N/Y
+  Pair 'MX019_SH25_Z': R 09-R-Matrix.dxf [TEXT 120] -> L 10-L-Matrix.dxf [TEXT 120] | Y/N
+  Pair 'MX020-SH25-Z40': R 09-R-Matrix.dxf [TEXT 122] -> L 10-L-Matrix.dxf [TEXT 122] | Y/Y
+  Pair 'MX021_SH25_Z35': R 09-R-Matrix.dxf [TEXT 124] -> L 10-L-Matrix.dxf [TEXT 124] | NN
+  Pair 'MX022-SH25-80Z': R 09-R-Matrix.dxf [TEXT 126] -> L 10-L-Matrix.dxf [TEXT 126] | N/Y
+  Pair 'MX023_SH25_80Z40': R 09-R-Matrix.dxf [TEXT 128] -> L 10-L-Matrix.dxf [TEXT 128] | Y/N
+  Pair 'MX024-SH25-80Z35': R 09-R-Matrix.dxf [TEXT 130] -> L 10-L-Matrix.dxf [TEXT 130] | Y/Y
+  Pair 'MX025_SH25_90Z': R 09-R-Matrix.dxf [TEXT 132] -> L 10-L-Matrix.dxf [TEXT 132] | NN
+  Pair 'MX026-SH25-90Z40': R 09-R-Matrix.dxf [TEXT 134] -> L 10-L-Matrix.dxf [TEXT 134] | N/Y
+  Pair 'MX027_SH25_90Z35': R 09-R-Matrix.dxf [TEXT 136] -> L 10-L-Matrix.dxf [TEXT 136] | Y/N
+  Pair 'MX028-300SH-Z': R 09-R-Matrix.dxf [TEXT 138] -> L 10-L-Matrix.dxf [TEXT 138] | Y/Y
+  Pair 'MX029_300SH_Z40': R 09-R-Matrix.dxf [TEXT 140] -> L 10-L-Matrix.dxf [TEXT 140] | NN
+  Pair 'MX030-300SH-Z35': R 09-R-Matrix.dxf [TEXT 142] -> L 10-L-Matrix.dxf [TEXT 142] | N/Y
+  Pair 'MX031_300SH_80Z': R 09-R-Matrix.dxf [TEXT 144] -> L 10-L-Matrix.dxf [TEXT 144] | Y/N
+  Pair 'MX032-300SH-80Z40': R 09-R-Matrix.dxf [TEXT 146] -> L 10-L-Matrix.dxf [TEXT 146] | Y/Y
+  Pair 'MX033_300SH_80Z35': R 09-R-Matrix.dxf [TEXT 148] -> L 10-L-Matrix.dxf [TEXT 148] | NN
+  Pair 'MX034-300SH-90Z': R 09-R-Matrix.dxf [TEXT 150] -> L 10-L-Matrix.dxf [TEXT 150] | N/Y
+  Pair 'MX035_300SH_90Z40': R 09-R-Matrix.dxf [TEXT 152] -> L 10-L-Matrix.dxf [TEXT 152] | Y/N
+  Pair 'MX036-300SH-90Z35': R 09-R-Matrix.dxf [TEXT 154] -> L 10-L-Matrix.dxf [TEXT 154] | Y/Y
+  Pair 'MX037_300SH18_Z': R 09-R-Matrix.dxf [TEXT 156] -> L 10-L-Matrix.dxf [TEXT 156] | NN
+  Pair 'MX038-300SH18-Z40': R 09-R-Matrix.dxf [TEXT 158] -> L 10-L-Matrix.dxf [TEXT 158] | N/Y
+  Pair 'MX039_300SH18_Z35': R 09-R-Matrix.dxf [TEXT 160] -> L 10-L-Matrix.dxf [TEXT 160] | Y/N
+  Pair 'MX040-300SH18-80Z': R 09-R-Matrix.dxf [TEXT 162] -> L 10-L-Matrix.dxf [TEXT 162] | Y/Y
+  Pair 'MX041_300SH18_80Z40': R 09-R-Matrix.dxf [TEXT 164] -> L 10-L-Matrix.dxf [TEXT 164] | NN
+  Pair 'MX042-300SH18-80Z35': R 09-R-Matrix.dxf [TEXT 166] -> L 10-L-Matrix.dxf [TEXT 166] | N/Y
+  Pair 'MX043_300SH18_90Z': R 09-R-Matrix.dxf [TEXT 168] -> L 10-L-Matrix.dxf [TEXT 168] | Y/N
+  Pair 'MX044-300SH18-90Z40': R 09-R-Matrix.dxf [TEXT 170] -> L 10-L-Matrix.dxf [TEXT 170] | Y/Y
+  Pair 'MX045_300SH18_90Z35': R 09-R-Matrix.dxf [TEXT 172] -> L 10-L-Matrix.dxf [TEXT 172] | NN
+  Pair 'MX046-300SH25-Z': R 09-R-Matrix.dxf [TEXT 174] -> L 10-L-Matrix.dxf [TEXT 174] | N/Y
+  Pair 'MX047_300SH25_Z40': R 09-R-Matrix.dxf [TEXT 176] -> L 10-L-Matrix.dxf [TEXT 176] | Y/N
+  Pair 'MX048-300SH25-Z35': R 09-R-Matrix.dxf [TEXT 178] -> L 10-L-Matrix.dxf [TEXT 178] | Y/Y
+  Pair 'MX049_300SH25_80Z': R 09-R-Matrix.dxf [TEXT 180] -> L 10-L-Matrix.dxf [TEXT 180] | NN
+  Pair 'MX050-300SH25-80Z40': R 09-R-Matrix.dxf [TEXT 182] -> L 10-L-Matrix.dxf [TEXT 182] | N/Y
+  Pair 'MX051_300SH25_80Z35': R 09-R-Matrix.dxf [TEXT 184] -> L 10-L-Matrix.dxf [TEXT 184] | Y/N
+  Pair 'MX052-300SH25-90Z': R 09-R-Matrix.dxf [TEXT 186] -> L 10-L-Matrix.dxf [TEXT 186] | Y/Y
+  Pair 'MX053_300SH25_90Z40': R 09-R-Matrix.dxf [TEXT 188] -> L 10-L-Matrix.dxf [TEXT 188] | NN
+  Pair 'MX054-300SH25-90Z35': R 09-R-Matrix.dxf [TEXT 190] -> L 10-L-Matrix.dxf [TEXT 190] | N/Y
+  Pair 'MX055_800SH_Z': R 09-R-Matrix.dxf [TEXT 192] -> L 10-L-Matrix.dxf [TEXT 192] | Y/N
+  Pair 'MX056-800SH-Z40': R 09-R-Matrix.dxf [TEXT 194] -> L 10-L-Matrix.dxf [TEXT 194] | Y/Y
+  Pair 'MX057_800SH_Z35': R 09-R-Matrix.dxf [TEXT 196] -> L 10-L-Matrix.dxf [TEXT 196] | NN
+  Pair 'MX058-800SH-80Z': R 09-R-Matrix.dxf [TEXT 198] -> L 10-L-Matrix.dxf [TEXT 198] | N/Y
+  Pair 'MX059_800SH_80Z40': R 09-R-Matrix.dxf [TEXT 200] -> L 10-L-Matrix.dxf [TEXT 200] | Y/N
+  Pair 'MX060-800SH-80Z35': R 09-R-Matrix.dxf [TEXT 202] -> L 10-L-Matrix.dxf [TEXT 202] | Y/Y
+  Pair 'MX061_800SH_90Z': R 09-R-Matrix.dxf [TEXT 204] -> L 10-L-Matrix.dxf [TEXT 204] | NN
+  Pair 'MX062-800SH-90Z40': R 09-R-Matrix.dxf [TEXT 206] -> L 10-L-Matrix.dxf [TEXT 206] | N/Y
+  Pair 'MX063_800SH_90Z35': R 09-R-Matrix.dxf [TEXT 208] -> L 10-L-Matrix.dxf [TEXT 208] | Y/N
+  Pair 'MX064-800SH18-Z': R 09-R-Matrix.dxf [TEXT 210] -> L 10-L-Matrix.dxf [TEXT 210] | Y/Y
+  Pair 'MX065_800SH18_Z40': R 09-R-Matrix.dxf [TEXT 212] -> L 10-L-Matrix.dxf [TEXT 212] | NN
+  Pair 'MX066-800SH18-Z35': R 09-R-Matrix.dxf [TEXT 214] -> L 10-L-Matrix.dxf [TEXT 214] | N/Y
+  Pair 'MX067_800SH18_80Z': R 09-R-Matrix.dxf [TEXT 216] -> L 10-L-Matrix.dxf [TEXT 216] | Y/N
+  Pair 'MX068-800SH18-80Z40': R 09-R-Matrix.dxf [TEXT 218] -> L 10-L-Matrix.dxf [TEXT 218] | Y/Y
+  Pair 'MX069_800SH18_80Z35': R 09-R-Matrix.dxf [TEXT 220] -> L 10-L-Matrix.dxf [TEXT 220] | NN
+  Pair 'MX070-800SH18-90Z': R 09-R-Matrix.dxf [TEXT 222] -> L 10-L-Matrix.dxf [TEXT 222] | N/Y
+  Pair 'MX071_800SH18_90Z40': R 09-R-Matrix.dxf [TEXT 224] -> L 10-L-Matrix.dxf [TEXT 224] | Y/N
+  Pair 'MX072-800SH18-90Z35': R 09-R-Matrix.dxf [TEXT 226] -> L 10-L-Matrix.dxf [TEXT 226] | Y/Y
+  Pair 'MX073_800SH25_Z': R 09-R-Matrix.dxf [TEXT 228] -> L 10-L-Matrix.dxf [TEXT 228] | NN
+  Pair 'MX074-800SH25-Z40': R 09-R-Matrix.dxf [TEXT 230] -> L 10-L-Matrix.dxf [TEXT 230] | N/Y
+  Pair 'MX075_800SH25_Z35': R 09-R-Matrix.dxf [TEXT 232] -> L 10-L-Matrix.dxf [TEXT 232] | Y/N
+  Pair 'MX076-800SH25-80Z': R 09-R-Matrix.dxf [TEXT 234] -> L 10-L-Matrix.dxf [TEXT 234] | Y/Y
+  Pair 'MX077_800SH25_80Z40': R 09-R-Matrix.dxf [TEXT 236] -> L 10-L-Matrix.dxf [TEXT 236] | NN
+  Pair 'MX078-800SH25-80Z35': R 09-R-Matrix.dxf [TEXT 238] -> L 10-L-Matrix.dxf [TEXT 238] | N/Y
+  Pair 'MX079_800SH25_90Z': R 09-R-Matrix.dxf [TEXT 240] -> L 10-L-Matrix.dxf [TEXT 240] | Y/N
+  Pair 'MX080-800SH25-90Z40': R 09-R-Matrix.dxf [TEXT 242] -> L 10-L-Matrix.dxf [TEXT 242] | Y/Y
+  Pair 'MX081_800SH25_90Z35': R 09-R-Matrix.dxf [TEXT 244] -> L 10-L-Matrix.dxf [TEXT 244] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (01-R.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (02-L.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (03-InFile.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (04-Alpha.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (05-Beta.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (06-Right.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (07-Left.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (08-Standalone.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (09-R-Matrix.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (10-L-Matrix.dxf).
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x1250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x2400 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x3550 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  OptiCut legacy: first rectangle is sheet handle 2F, 4900x24250 mm.
+  Pair 'CASE01_300SH_Z': R 01-R.dxf [TEXT 11] -> L 02-L.dxf [TEXT 11] | NN
+  Pair 'CASE02_300SH_Z': R 01-R.dxf [TEXT 13] -> L 02-L.dxf [TEXT 13] | N/Y
+  Pair 'CASE03_300SH_Z': R 01-R.dxf [TEXT 15] -> L 02-L.dxf [TEXT 15] | Y/N
+  Pair 'CASE04_300SH_Z': R 01-R.dxf [TEXT 17] -> L 02-L.dxf [TEXT 17] | Y/Y
+  Pair 'CASE05_SH_Z': R 01-R.dxf [TEXT 19] -> L 02-L.dxf [TEXT 19] | NN
+  Pair 'CASE06_SH_Z': R 01-R.dxf [TEXT 21] -> L 02-L.dxf [TEXT 21] | N/Y
+  Pair 'CASE07_SH_Z': R 01-R.dxf [TEXT 23] -> L 02-L.dxf [TEXT 23] | Y/N
+  Pair 'CASE08_SH_Z': R 01-R.dxf [TEXT 25] -> L 02-L.dxf [TEXT 25] | Y/Y
+  Pair 'CUSTOM1_300SH_80Z40': R 06-Right.dxf [TEXT 9] -> L 07-Left.dxf [TEXT 9] | N/Y
+  Pair 'CUSTOM2_SH_80Z': R 06-Right.dxf [TEXT 11] -> L 07-Left.dxf [TEXT 11] | Y/N
+  Pair 'CUSTOM3_300SH_Z40': R 06-Right.dxf [TEXT 13] -> L 07-Left.dxf [TEXT 13] | NN
+  Pair 'CUSTOM4_800SH20_90Z35': R 06-Right.dxf [TEXT 15] -> L 07-Left.dxf [TEXT 15] | Y/Y
+  Pair 'CUSTOM5_SH25_Z': R 06-Right.dxf [TEXT 17] -> L 07-Left.dxf [TEXT 17] | NN
+  Pair 'CUSTOM6_300SH30_Z': R 06-Right.dxf [TEXT 19] -> L 07-Left.dxf [TEXT 19] | Y/Y
+  Pair 'FALLBACK01_300SH_Z': R 04-Alpha.dxf [TEXT 7] -> L 05-Beta.dxf [TEXT 7] | N/Y
+  Pair 'FALLBACK02_SH_Z': R 04-Alpha.dxf [TEXT 9] -> L 05-Beta.dxf [TEXT 9] | Y/N
+  Pair 'FALLBACK03_300SH_Z': R 04-Alpha.dxf [TEXT 11] -> L 05-Beta.dxf [TEXT 11] | Y/Y
+  Pair 'FALLBACK04_SH_Z': R 04-Alpha.dxf [TEXT 13] -> L 05-Beta.dxf [TEXT 13] | NN
+  Pair 'INFILE01_300SH_Z': R 03-InFile.dxf [TEXT 11] -> L 03-InFile.dxf [TEXT 13] | NN
+  Pair 'INFILE02_800SH_Z': R 03-InFile.dxf [TEXT 15] -> L 03-InFile.dxf [TEXT 17] | N/Y
+  Pair 'INFILE03_300SH_Z': R 03-InFile.dxf [TEXT 19] -> L 03-InFile.dxf [TEXT 21] | Y/N
+  Pair 'INFILE04_800SH_Z': R 03-InFile.dxf [TEXT 23] -> L 03-InFile.dxf [TEXT 25] | Y/Y
+  Pair 'MX001_SH_Z': R 09-R-Matrix.dxf [TEXT 84] -> L 10-L-Matrix.dxf [TEXT 84] | NN
+  Pair 'MX002-SH-Z40': R 09-R-Matrix.dxf [TEXT 86] -> L 10-L-Matrix.dxf [TEXT 86] | N/Y
+  Pair 'MX003_SH_Z35': R 09-R-Matrix.dxf [TEXT 88] -> L 10-L-Matrix.dxf [TEXT 88] | Y/N
+  Pair 'MX004-SH-80Z': R 09-R-Matrix.dxf [TEXT 90] -> L 10-L-Matrix.dxf [TEXT 90] | Y/Y
+  Pair 'MX005_SH_80Z40': R 09-R-Matrix.dxf [TEXT 92] -> L 10-L-Matrix.dxf [TEXT 92] | NN
+  Pair 'MX006-SH-80Z35': R 09-R-Matrix.dxf [TEXT 94] -> L 10-L-Matrix.dxf [TEXT 94] | N/Y
+  Pair 'MX007_SH_90Z': R 09-R-Matrix.dxf [TEXT 96] -> L 10-L-Matrix.dxf [TEXT 96] | Y/N
+  Pair 'MX008-SH-90Z40': R 09-R-Matrix.dxf [TEXT 98] -> L 10-L-Matrix.dxf [TEXT 98] | Y/Y
+  Pair 'MX009_SH_90Z35': R 09-R-Matrix.dxf [TEXT 100] -> L 10-L-Matrix.dxf [TEXT 100] | NN
+  Pair 'MX010-SH18-Z': R 09-R-Matrix.dxf [TEXT 102] -> L 10-L-Matrix.dxf [TEXT 102] | N/Y
+  Pair 'MX011_SH18_Z40': R 09-R-Matrix.dxf [TEXT 104] -> L 10-L-Matrix.dxf [TEXT 104] | Y/N
+  Pair 'MX012-SH18-Z35': R 09-R-Matrix.dxf [TEXT 106] -> L 10-L-Matrix.dxf [TEXT 106] | Y/Y
+  Pair 'MX013_SH18_80Z': R 09-R-Matrix.dxf [TEXT 108] -> L 10-L-Matrix.dxf [TEXT 108] | NN
+  Pair 'MX014-SH18-80Z40': R 09-R-Matrix.dxf [TEXT 110] -> L 10-L-Matrix.dxf [TEXT 110] | N/Y
+  Pair 'MX015_SH18_80Z35': R 09-R-Matrix.dxf [TEXT 112] -> L 10-L-Matrix.dxf [TEXT 112] | Y/N
+  Pair 'MX016-SH18-90Z': R 09-R-Matrix.dxf [TEXT 114] -> L 10-L-Matrix.dxf [TEXT 114] | Y/Y
+  Pair 'MX017_SH18_90Z40': R 09-R-Matrix.dxf [TEXT 116] -> L 10-L-Matrix.dxf [TEXT 116] | NN
+  Pair 'MX018-SH18-90Z35': R 09-R-Matrix.dxf [TEXT 118] -> L 10-L-Matrix.dxf [TEXT 118] | N/Y
+  Pair 'MX019_SH25_Z': R 09-R-Matrix.dxf [TEXT 120] -> L 10-L-Matrix.dxf [TEXT 120] | Y/N
+  Pair 'MX020-SH25-Z40': R 09-R-Matrix.dxf [TEXT 122] -> L 10-L-Matrix.dxf [TEXT 122] | Y/Y
+  Pair 'MX021_SH25_Z35': R 09-R-Matrix.dxf [TEXT 124] -> L 10-L-Matrix.dxf [TEXT 124] | NN
+  Pair 'MX022-SH25-80Z': R 09-R-Matrix.dxf [TEXT 126] -> L 10-L-Matrix.dxf [TEXT 126] | N/Y
+  Pair 'MX023_SH25_80Z40': R 09-R-Matrix.dxf [TEXT 128] -> L 10-L-Matrix.dxf [TEXT 128] | Y/N
+  Pair 'MX024-SH25-80Z35': R 09-R-Matrix.dxf [TEXT 130] -> L 10-L-Matrix.dxf [TEXT 130] | Y/Y
+  Pair 'MX025_SH25_90Z': R 09-R-Matrix.dxf [TEXT 132] -> L 10-L-Matrix.dxf [TEXT 132] | NN
+  Pair 'MX026-SH25-90Z40': R 09-R-Matrix.dxf [TEXT 134] -> L 10-L-Matrix.dxf [TEXT 134] | N/Y
+  Pair 'MX027_SH25_90Z35': R 09-R-Matrix.dxf [TEXT 136] -> L 10-L-Matrix.dxf [TEXT 136] | Y/N
+  Pair 'MX028-300SH-Z': R 09-R-Matrix.dxf [TEXT 138] -> L 10-L-Matrix.dxf [TEXT 138] | Y/Y
+  Pair 'MX029_300SH_Z40': R 09-R-Matrix.dxf [TEXT 140] -> L 10-L-Matrix.dxf [TEXT 140] | NN
+  Pair 'MX030-300SH-Z35': R 09-R-Matrix.dxf [TEXT 142] -> L 10-L-Matrix.dxf [TEXT 142] | N/Y
+  Pair 'MX031_300SH_80Z': R 09-R-Matrix.dxf [TEXT 144] -> L 10-L-Matrix.dxf [TEXT 144] | Y/N
+  Pair 'MX032-300SH-80Z40': R 09-R-Matrix.dxf [TEXT 146] -> L 10-L-Matrix.dxf [TEXT 146] | Y/Y
+  Pair 'MX033_300SH_80Z35': R 09-R-Matrix.dxf [TEXT 148] -> L 10-L-Matrix.dxf [TEXT 148] | NN
+  Pair 'MX034-300SH-90Z': R 09-R-Matrix.dxf [TEXT 150] -> L 10-L-Matrix.dxf [TEXT 150] | N/Y
+  Pair 'MX035_300SH_90Z40': R 09-R-Matrix.dxf [TEXT 152] -> L 10-L-Matrix.dxf [TEXT 152] | Y/N
+  Pair 'MX036-300SH-90Z35': R 09-R-Matrix.dxf [TEXT 154] -> L 10-L-Matrix.dxf [TEXT 154] | Y/Y
+  Pair 'MX037_300SH18_Z': R 09-R-Matrix.dxf [TEXT 156] -> L 10-L-Matrix.dxf [TEXT 156] | NN
+  Pair 'MX038-300SH18-Z40': R 09-R-Matrix.dxf [TEXT 158] -> L 10-L-Matrix.dxf [TEXT 158] | N/Y
+  Pair 'MX039_300SH18_Z35': R 09-R-Matrix.dxf [TEXT 160] -> L 10-L-Matrix.dxf [TEXT 160] | Y/N
+  Pair 'MX040-300SH18-80Z': R 09-R-Matrix.dxf [TEXT 162] -> L 10-L-Matrix.dxf [TEXT 162] | Y/Y
+  Pair 'MX041_300SH18_80Z40': R 09-R-Matrix.dxf [TEXT 164] -> L 10-L-Matrix.dxf [TEXT 164] | NN
+  Pair 'MX042-300SH18-80Z35': R 09-R-Matrix.dxf [TEXT 166] -> L 10-L-Matrix.dxf [TEXT 166] | N/Y
+  Pair 'MX043_300SH18_90Z': R 09-R-Matrix.dxf [TEXT 168] -> L 10-L-Matrix.dxf [TEXT 168] | Y/N
+  Pair 'MX044-300SH18-90Z40': R 09-R-Matrix.dxf [TEXT 170] -> L 10-L-Matrix.dxf [TEXT 170] | Y/Y
+  Pair 'MX045_300SH18_90Z35': R 09-R-Matrix.dxf [TEXT 172] -> L 10-L-Matrix.dxf [TEXT 172] | NN
+  Pair 'MX046-300SH25-Z': R 09-R-Matrix.dxf [TEXT 174] -> L 10-L-Matrix.dxf [TEXT 174] | N/Y
+  Pair 'MX047_300SH25_Z40': R 09-R-Matrix.dxf [TEXT 176] -> L 10-L-Matrix.dxf [TEXT 176] | Y/N
+  Pair 'MX048-300SH25-Z35': R 09-R-Matrix.dxf [TEXT 178] -> L 10-L-Matrix.dxf [TEXT 178] | Y/Y
+  Pair 'MX049_300SH25_80Z': R 09-R-Matrix.dxf [TEXT 180] -> L 10-L-Matrix.dxf [TEXT 180] | NN
+  Pair 'MX050-300SH25-80Z40': R 09-R-Matrix.dxf [TEXT 182] -> L 10-L-Matrix.dxf [TEXT 182] | N/Y
+  Pair 'MX051_300SH25_80Z35': R 09-R-Matrix.dxf [TEXT 184] -> L 10-L-Matrix.dxf [TEXT 184] | Y/N
+  Pair 'MX052-300SH25-90Z': R 09-R-Matrix.dxf [TEXT 186] -> L 10-L-Matrix.dxf [TEXT 186] | Y/Y
+  Pair 'MX053_300SH25_90Z40': R 09-R-Matrix.dxf [TEXT 188] -> L 10-L-Matrix.dxf [TEXT 188] | NN
+  Pair 'MX054-300SH25-90Z35': R 09-R-Matrix.dxf [TEXT 190] -> L 10-L-Matrix.dxf [TEXT 190] | N/Y
+  Pair 'MX055_800SH_Z': R 09-R-Matrix.dxf [TEXT 192] -> L 10-L-Matrix.dxf [TEXT 192] | Y/N
+  Pair 'MX056-800SH-Z40': R 09-R-Matrix.dxf [TEXT 194] -> L 10-L-Matrix.dxf [TEXT 194] | Y/Y
+  Pair 'MX057_800SH_Z35': R 09-R-Matrix.dxf [TEXT 196] -> L 10-L-Matrix.dxf [TEXT 196] | NN
+  Pair 'MX058-800SH-80Z': R 09-R-Matrix.dxf [TEXT 198] -> L 10-L-Matrix.dxf [TEXT 198] | N/Y
+  Pair 'MX059_800SH_80Z40': R 09-R-Matrix.dxf [TEXT 200] -> L 10-L-Matrix.dxf [TEXT 200] | Y/N
+  Pair 'MX060-800SH-80Z35': R 09-R-Matrix.dxf [TEXT 202] -> L 10-L-Matrix.dxf [TEXT 202] | Y/Y
+  Pair 'MX061_800SH_90Z': R 09-R-Matrix.dxf [TEXT 204] -> L 10-L-Matrix.dxf [TEXT 204] | NN
+  Pair 'MX062-800SH-90Z40': R 09-R-Matrix.dxf [TEXT 206] -> L 10-L-Matrix.dxf [TEXT 206] | N/Y
+  Pair 'MX063_800SH_90Z35': R 09-R-Matrix.dxf [TEXT 208] -> L 10-L-Matrix.dxf [TEXT 208] | Y/N
+  Pair 'MX064-800SH18-Z': R 09-R-Matrix.dxf [TEXT 210] -> L 10-L-Matrix.dxf [TEXT 210] | Y/Y
+  Pair 'MX065_800SH18_Z40': R 09-R-Matrix.dxf [TEXT 212] -> L 10-L-Matrix.dxf [TEXT 212] | NN
+  Pair 'MX066-800SH18-Z35': R 09-R-Matrix.dxf [TEXT 214] -> L 10-L-Matrix.dxf [TEXT 214] | N/Y
+  Pair 'MX067_800SH18_80Z': R 09-R-Matrix.dxf [TEXT 216] -> L 10-L-Matrix.dxf [TEXT 216] | Y/N
+  Pair 'MX068-800SH18-80Z40': R 09-R-Matrix.dxf [TEXT 218] -> L 10-L-Matrix.dxf [TEXT 218] | Y/Y
+  Pair 'MX069_800SH18_80Z35': R 09-R-Matrix.dxf [TEXT 220] -> L 10-L-Matrix.dxf [TEXT 220] | NN
+  Pair 'MX070-800SH18-90Z': R 09-R-Matrix.dxf [TEXT 222] -> L 10-L-Matrix.dxf [TEXT 222] | N/Y
+  Pair 'MX071_800SH18_90Z40': R 09-R-Matrix.dxf [TEXT 224] -> L 10-L-Matrix.dxf [TEXT 224] | Y/N
+  Pair 'MX072-800SH18-90Z35': R 09-R-Matrix.dxf [TEXT 226] -> L 10-L-Matrix.dxf [TEXT 226] | Y/Y
+  Pair 'MX073_800SH25_Z': R 09-R-Matrix.dxf [TEXT 228] -> L 10-L-Matrix.dxf [TEXT 228] | NN
+  Pair 'MX074-800SH25-Z40': R 09-R-Matrix.dxf [TEXT 230] -> L 10-L-Matrix.dxf [TEXT 230] | N/Y
+  Pair 'MX075_800SH25_Z35': R 09-R-Matrix.dxf [TEXT 232] -> L 10-L-Matrix.dxf [TEXT 232] | Y/N
+  Pair 'MX076-800SH25-80Z': R 09-R-Matrix.dxf [TEXT 234] -> L 10-L-Matrix.dxf [TEXT 234] | Y/Y
+  Pair 'MX077_800SH25_80Z40': R 09-R-Matrix.dxf [TEXT 236] -> L 10-L-Matrix.dxf [TEXT 236] | NN
+  Pair 'MX078-800SH25-80Z35': R 09-R-Matrix.dxf [TEXT 238] -> L 10-L-Matrix.dxf [TEXT 238] | N/Y
+  Pair 'MX079_800SH25_90Z': R 09-R-Matrix.dxf [TEXT 240] -> L 10-L-Matrix.dxf [TEXT 240] | Y/N
+  Pair 'MX080-800SH25-90Z40': R 09-R-Matrix.dxf [TEXT 242] -> L 10-L-Matrix.dxf [TEXT 242] | Y/Y
+  Pair 'MX081_800SH25_90Z35': R 09-R-Matrix.dxf [TEXT 244] -> L 10-L-Matrix.dxf [TEXT 244] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (01-R.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (02-L.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (03-InFile.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (04-Alpha.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (05-Beta.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (06-Right.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (07-Left.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (08-Standalone.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (09-R-Matrix.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (10-L-Matrix.dxf).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-One-Part.dxf).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-One-Part.dxf).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Pair '01_300SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 32] -> L Legacy-Fifteen-Parts.dxf [TEXT 38] | NN
+  Pair '02_300SH100_Z': R Legacy-Fifteen-Parts.dxf [TEXT 42] -> L Legacy-Fifteen-Parts.dxf [TEXT 44] | NN
+  Pair '02_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 18] -> L Legacy-Fifteen-Parts.dxf [TEXT 36] | NN
+  Pair '03_320SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 22] -> L Legacy-Fifteen-Parts.dxf [TEXT 24] | Y/Y
+  Pair '03_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 28] -> L Legacy-Fifteen-Parts.dxf [TEXT 46] | NN
+  Pair '04_290SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 20] -> L Legacy-Fifteen-Parts.dxf [TEXT 26] | NN
+  Pair '04_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 30] -> L Legacy-Fifteen-Parts.dxf [TEXT 40] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-Fifteen-Parts.dxf).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Pair '01_300SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 32] -> L Legacy-Fifteen-Parts.dxf [TEXT 38] | NN
+  Pair '02_300SH100_Z': R Legacy-Fifteen-Parts.dxf [TEXT 42] -> L Legacy-Fifteen-Parts.dxf [TEXT 44] | NN
+  Pair '02_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 18] -> L Legacy-Fifteen-Parts.dxf [TEXT 36] | NN
+  Pair '03_320SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 22] -> L Legacy-Fifteen-Parts.dxf [TEXT 24] | Y/Y
+  Pair '03_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 28] -> L Legacy-Fifteen-Parts.dxf [TEXT 46] | NN
+  Pair '04_290SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 20] -> L Legacy-Fifteen-Parts.dxf [TEXT 26] | NN
+  Pair '04_SH_Z': R Legacy-Fifteen-Parts.dxf [TEXT 30] -> L Legacy-Fifteen-Parts.dxf [TEXT 40] | NN
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Legacy-Fifteen-Parts.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Original.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Original.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Pair 'SH_Z': R Layered-Pair.dxf [TEXT 5] -> L Layered-Pair.dxf [TEXT 11] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Pair.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Pair 'SH_Z': R Layered-Pair.dxf [TEXT 5] -> L Layered-Pair.dxf [TEXT 11] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Pair.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Standalone.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Layered-Standalone.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Pair 'MIX_SH_Z': R Mix-R-Legacy.dxf [TEXT 4] -> L Mix-L-Layered.dxf [TEXT 5] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-L-Layered.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-R-Legacy.dxf).
+  OptiCut layered: Panel handle 16, 22 Parts outlines (off-cuts ignored).
+  OptiCut legacy: first rectangle is sheet handle 292, 3650x2090 mm.
+  Pair 'MIX_SH_Z': R Mix-R-Legacy.dxf [TEXT 4] -> L Mix-L-Layered.dxf [TEXT 5] | Y/Y
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-L-Layered.dxf).
+  Geometry safe: sheet containment, part overlap, SH/Z bounds and groove/notch conflicts checked (Mix-R-Legacy.dxf).
+Parity: 17 DXF outputs identical to original; 7 contract JSON round-trips passed.

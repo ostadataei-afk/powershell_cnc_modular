@@ -1,0 +1,2 @@
+PASS 3 unsafe output paths rejected before execution.
+PASS JSON CLI: 10 files, schema v1.
